@@ -3,7 +3,7 @@
 <eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -159,7 +159,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYTJhNTVh" projecturn="a.cGVyc29uYWw6dWUyYTJhNTVhIzIwMTkwMzE5MTgzMjEwMjAx" f3durn="urn:adsk.wipprod:dm.lineage:b-EIoLgPRRSZZY5XPuZKUg" pcbguid="2a3ceb48-4ceb-49d0-a09d-b05401d94601" lastpulledtime="" lastsyncedchangeguid="b7428aeb-6100-ee28-0705-ec42da0e488f"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTJhNTVh" projecturn="a.cGVyc29uYWw6dWUyYTJhNTVhIzIwMTkwMzE5MTgzMjEwMjAx" f3durn="urn:adsk.wipprod:dm.lineage:b-EIoLgPRRSZZY5XPuZKUg" pcbguid="2a3ceb48-4ceb-49d0-a09d-b05401d94601" lastpulledtime="" lastsyncedchangeguid="1a542480-1b17-f582-cc75-4d2e50b18bf8"/>
 <plain>
 <wire x1="-0.001" y1="0" x2="47.499" y2="0" width="0" layer="20"/>
 <wire x1="47.499" y1="0" x2="47.4736" y2="44.6814" width="0" layer="20"/>
@@ -2234,17 +2234,21 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="R4527" urn="urn:adsk.eagle:footprint:13246/1" library_version="10">
-<description>&lt;b&gt;Package 4527&lt;/b&gt;&lt;p&gt;
-Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
-<wire x1="-5.675" y1="-3.375" x2="5.65" y2="-3.375" width="0.2032" layer="21"/>
-<wire x1="5.65" y1="-3.375" x2="5.65" y2="3.375" width="0.2032" layer="51"/>
-<wire x1="5.65" y1="3.375" x2="-5.675" y2="3.375" width="0.2032" layer="21"/>
-<wire x1="-5.675" y1="3.375" x2="-5.675" y2="-3.375" width="0.2032" layer="51"/>
-<smd name="1" x="-4.575" y="0" dx="3.94" dy="5.84" layer="1"/>
-<smd name="2" x="4.575" y="0" dx="3.94" dy="5.84" layer="1"/>
-<text x="-5.715" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.715" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<package name="R2512" urn="urn:adsk.eagle:footprint:23055/1" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 </package>
 </packages>
 <packages3d>
@@ -2260,11 +2264,10 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
-<package3d name="R4527" urn="urn:adsk.eagle:package:13310/2" type="model" library_version="10">
-<description>Package 4527
-Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
+<package3d name="R2512" urn="urn:adsk.eagle:package:23545/2" type="model" library_version="3">
+<description>RESISTOR</description>
 <packageinstances>
-<packageinstance name="R4527"/>
+<packageinstance name="R2512"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2878,9 +2881,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.6298" y="1.3526" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="32.8036" y="6.1064" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="IC1" library="drivers" library_urn="urn:adsk.eagle:library:1016906" package="R-PDSO-G38" package3d_urn="urn:adsk.eagle:package:1616379/2" value="DRV8711" x="27.8836" y="13.8214" smashed="yes">
-<attribute name="VALUE" x="36.1336" y="10.5714" size="1.27" layer="27" rot="R90"/>
-</element>
+<element name="IC1" library="drivers" library_urn="urn:adsk.eagle:library:1016906" package="R-PDSO-G38" package3d_urn="urn:adsk.eagle:package:1616379/2" value="DRV8711" x="27.8836" y="13.8214" smashed="yes"/>
 <element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="24.7336" y="25.0614" smashed="yes" rot="R90">
 <attribute name="SPICEPREFIX" value="R" x="71.7236" y="64.4314" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="27.2736" y="24.4264" size="1.27" layer="27" rot="R90"/>
@@ -2903,11 +2904,9 @@ design rules under a new name.</description>
 </element>
 <element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0R" x="16.4936" y="12.3014" smashed="yes">
 <attribute name="SPICEPREFIX" value="R" x="46.9736" y="-27.0686" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="15.8586" y="9.7614" size="1.27" layer="27"/>
 </element>
 <element name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0R" x="16.4736" y="10.1814" smashed="yes">
 <attribute name="SPICEPREFIX" value="R" x="53.3036" y="-29.1886" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="15.8386" y="7.6414" size="1.27" layer="27"/>
 </element>
 <element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="18.5636" y="34.2014" smashed="yes" rot="R270">
 <attribute name="SPICEPREFIX" value="R" x="-34.7764" y="1.1814" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2917,32 +2916,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="43.0176" y="8.8994" size="1.016" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="43.2836" y="13.8564" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="T1" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="14.2236" y="39.6814" smashed="yes">
-<attribute name="VALUE" x="21.2236" y="35.6814" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T2" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="14.2236" y="31.4314" smashed="yes">
-<attribute name="VALUE" x="21.2236" y="27.4314" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T3" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="22.7236" y="39.6814" smashed="yes">
-<attribute name="VALUE" x="29.7236" y="35.6814" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T4" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="22.7236" y="31.4314" smashed="yes">
-<attribute name="VALUE" x="29.7236" y="27.4314" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T5" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="32.9736" y="39.6814" smashed="yes">
-<attribute name="VALUE" x="39.9736" y="35.6814" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T6" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="32.9736" y="31.4314" smashed="yes">
-<attribute name="VALUE" x="39.9736" y="27.4314" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T7" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="41.4736" y="39.6814" smashed="yes">
-<attribute name="NAME" x="46.5536" y="35.8714" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="48.4736" y="35.6814" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="T8" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="41.4736" y="31.4314" smashed="yes">
-<attribute name="NAME" x="46.5536" y="27.6214" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="48.4736" y="27.4314" size="1.27" layer="27" rot="R90"/>
-</element>
+<element name="T1" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="14.2236" y="39.6814" smashed="yes"/>
+<element name="T2" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="14.2236" y="31.4314" smashed="yes"/>
+<element name="T3" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="22.7236" y="39.6814" smashed="yes"/>
+<element name="T4" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="22.7236" y="31.4314" smashed="yes"/>
+<element name="T5" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="32.9736" y="39.6814" smashed="yes"/>
+<element name="T6" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="32.9736" y="31.4314" smashed="yes"/>
+<element name="T7" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="41.4736" y="39.6814" smashed="yes"/>
+<element name="T8" library="transistors" library_urn="urn:adsk.eagle:library:1016916" package="PG-TDSON-8-33" package3d_urn="urn:adsk.eagle:package:1016920/3" value="IPC50N04S5" x="41.4736" y="31.4314" smashed="yes"/>
 <element name="X1" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" package="AK500/4" package3d_urn="urn:adsk.eagle:package:9887/1" value="" x="5.9736" y="23.6814" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="-23.2364" y="0.8214" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="-23.2364" y="0.8214" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2957,18 +2938,14 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="unknown" x="-23.2364" y="-30.9386" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="0.2586" y="13.5114" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R4527" package3d_urn="urn:adsk.eagle:package:13310/2" value="0.05R/5W" x="13.9736" y="19.9314" smashed="yes" rot="R90">
-<attribute name="SPICEPREFIX" value="R" x="13.9736" y="19.9314" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="19.0536" y="14.2164" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R4527" package3d_urn="urn:adsk.eagle:package:13310/2" value="0.05R/5W" x="41.7236" y="19.9314" smashed="yes" rot="R90">
-<attribute name="SPICEPREFIX" value="R" x="41.7236" y="19.9314" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="46.8036" y="14.2164" size="1.27" layer="27" rot="R90"/>
-</element>
 <element name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="CPOL-RADIAL-5MM-10MM" package3d_urn="urn:adsk.eagle:package:37412/1" value="1mF" x="5.4736" y="39.4314" smashed="yes" rot="R180">
-<attribute name="NAME" x="5.4736" y="34.2244" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-09538" x="5.4736" y="39.4314" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="5.4736" y="44.6384" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+</element>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="0.3R/2W" x="14" y="20" smashed="yes" rot="R90">
+<attribute name="SPICEPREFIX" value="R" x="14" y="20" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="0.3R/2W" x="40.75" y="20" smashed="yes" rot="R90">
+<attribute name="SPICEPREFIX" value="R" x="40.75" y="20" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3068,15 +3045,17 @@ design rules under a new name.</description>
 <contactref element="T4" pad="2"/>
 <contactref element="IC1" pad="34"/>
 <wire x1="25.3836" y1="16.6214" x2="25.3836" y2="19.0214" width="0.3048" layer="1"/>
-<polygon width="0.3048" layer="1" isolate="0.3048">
-<vertex x="11.2236" y="29.4314"/>
-<vertex x="11.2236" y="25.1814"/>
-<vertex x="25.7236" y="25.1814"/>
-<vertex x="25.7236" y="29.4314"/>
-</polygon>
-<contactref element="R1" pad="2"/>
 <wire x1="23.2236" y1="21.1814" x2="23.2236" y2="26.4314" width="0.3048" layer="1"/>
 <wire x1="25.3836" y1="19.0214" x2="23.2236" y2="21.1814" width="0.3048" layer="1"/>
+<contactref element="R1" pad="2"/>
+<polygon width="0.127" layer="1" isolate="0.3048">
+<vertex x="10.5" y="29.5"/>
+<vertex x="25.5" y="29.5"/>
+<vertex x="25.5" y="25.5"/>
+<vertex x="17.5" y="25.5"/>
+<vertex x="17.5" y="21"/>
+<vertex x="10.5" y="21"/>
+</polygon>
 </signal>
 <signal name="AGND">
 <contactref element="IC1" pad="33"/>
@@ -3086,8 +3065,6 @@ design rules under a new name.</description>
 <contactref element="R18" pad="1"/>
 <wire x1="30.3836" y1="16.6214" x2="30.3836" y2="19.0914" width="0.3048" layer="1"/>
 <wire x1="25.8836" y1="16.6214" x2="25.8836" y2="19.2714" width="0.3048" layer="1"/>
-<contactref element="R1" pad="1"/>
-<contactref element="R2" pad="1"/>
 <polygon width="0.3048" layer="1" isolate="0.3048">
 <vertex x="8.9736" y="19.1814"/>
 <vertex x="16.9736" y="19.1814"/>
@@ -3119,6 +3096,8 @@ design rules under a new name.</description>
 <via x="31.2236" y="19.9314" extent="1-16" drill="0.35" diameter="0.7"/>
 <wire x1="31.2236" y1="19.9314" x2="9.7236" y2="19.9314" width="0.3048" layer="16"/>
 <via x="9.7236" y="19.9314" extent="1-16" drill="0.35" diameter="0.7"/>
+<contactref element="R1" pad="1"/>
+<contactref element="R2" pad="1"/>
 </signal>
 <signal name="V+">
 <contactref element="T3" pad="1"/>
@@ -3245,15 +3224,17 @@ design rules under a new name.</description>
 <contactref element="T8" pad="2"/>
 <contactref element="IC1" pad="25"/>
 <wire x1="29.8836" y1="16.6214" x2="29.8836" y2="19.8414" width="0.3048" layer="1"/>
-<polygon width="0.3048" layer="1" isolate="0.3048">
-<vertex x="29.9736" y="29.4314"/>
-<vertex x="29.9736" y="25.4314"/>
-<vertex x="44.4736" y="25.4314"/>
-<vertex x="44.4736" y="29.4314"/>
-</polygon>
-<contactref element="R2" pad="2"/>
 <wire x1="32.2236" y1="22.1814" x2="32.2236" y2="25.4314" width="0.3048" layer="1"/>
 <wire x1="29.8836" y1="19.8414" x2="32.2236" y2="22.1814" width="0.3048" layer="1"/>
+<contactref element="R2" pad="2"/>
+<polygon width="0.127" layer="1" isolate="0.3048">
+<vertex x="29.75" y="29.75"/>
+<vertex x="45" y="29.75"/>
+<vertex x="45" y="20.25"/>
+<vertex x="38.25" y="20.25"/>
+<vertex x="38.25" y="25.25"/>
+<vertex x="29.75" y="25.25"/>
+</polygon>
 </signal>
 <signal name="N$2">
 <contactref element="R6" pad="2"/>
@@ -3503,8 +3484,8 @@ design rules under a new name.</description>
 <wire x1="24.0406" y1="12.8984875" x2="24.0406" y2="14.4643125" width="0.3048" layer="1"/>
 <wire x1="25.3836" y1="12.0914" x2="24.9766" y2="12.4984" width="0.3048" layer="1"/>
 <wire x1="24.9766" y1="12.4984" x2="24.4406875" y2="12.4984" width="0.3048" layer="1"/>
-<via x="39.4736" y="19.9314" extent="1-16" drill="0.35" diameter="0.7"/>
-<via x="41.4736" y="19.9314" extent="1-16" drill="0.35" diameter="0.7"/>
+<via x="39.2236" y="19.1814" extent="1-16" drill="0.35" diameter="0.7"/>
+<via x="41.4736" y="19.1814" extent="1-16" drill="0.35" diameter="0.7"/>
 <via x="17.4736" y="4.4314" extent="1-16" drill="0.35" diameter="0.7"/>
 <via x="19.7236" y="4.4314" extent="1-16" drill="0.35" diameter="0.7"/>
 <via x="21.9736" y="4.4314" extent="1-16" drill="0.35" diameter="0.7"/>
@@ -3532,6 +3513,18 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="19,1,827c801233f4319a"/>
+<approved hash="19,1,527e50127bf47998"/>
+<approved hash="19,1,3274301a1bfc1992"/>
+<approved hash="19,1,c27bc01213f4119d"/>
+<approved hash="19,1,627b601413f2119d"/>
+<approved hash="19,1,f1c0f00643e04226"/>
+<approved hash="19,1,21c220060be00a24"/>
+<approved hash="19,1,41c8400e6be86a2e"/>
+<approved hash="19,1,b1c7b00663e06221"/>
+<approved hash="19,1,11c7100063e66221"/>
+</errors>
 </board>
 </drawing>
 <compatibility>

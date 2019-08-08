@@ -8921,11 +8921,11 @@ CAP-08070</description>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0R"/>
 <part name="AGND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R4527" package3d_urn="urn:adsk.eagle:package:13310/2" value="0.05R/5W"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R4527" package3d_urn="urn:adsk.eagle:package:13310/2" value="0.05R/5W"/>
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1000UF" device="-RADIAL-5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37412/1" value="1mF"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="0.3R/2W"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="0.3R/2W"/>
 </parts>
 <sheets>
 <sheet>
@@ -9101,14 +9101,6 @@ CAP-08070</description>
 <instance part="GND6" gate="1" x="180.34" y="88.9" smashed="yes">
 <attribute name="VALUE" x="180.34" y="88.646" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="R1" gate="G$1" x="127" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="123.19" y="125.5014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="123.19" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R2" gate="G$1" x="205.74" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.93" y="125.5014" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="201.93" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="C8" gate="G$1" x="241.3" y="71.12" smashed="yes">
 <attribute name="NAME" x="242.316" y="71.755" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="242.316" y="66.929" size="1.778" layer="96" font="vector"/>
@@ -9118,6 +9110,14 @@ CAP-08070</description>
 </instance>
 <instance part="GND7" gate="1" x="241.3" y="58.42" smashed="yes">
 <attribute name="VALUE" x="241.3" y="58.166" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="R1" gate="G$1" x="127" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="125.73" y="125.5014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="125.73" y="120.142" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R2" gate="G$1" x="205.74" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.47" y="125.5014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="204.47" y="120.142" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -9224,9 +9224,9 @@ CAP-08070</description>
 <junction x="119.38" y="129.54"/>
 <wire x1="119.38" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 <label x="106.68" y="129.54" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="127" y1="127" x2="127" y2="129.54" width="0.1524" layer="91"/>
 <junction x="127" y="129.54"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AISENP"/>
@@ -9237,15 +9237,15 @@ CAP-08070</description>
 <net name="AGND" class="0">
 <segment>
 <label x="106.68" y="114.3" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="127" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="127" y1="116.84" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <label x="185.42" y="114.3" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="116.84" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AISENN"/>
@@ -9422,9 +9422,9 @@ CAP-08070</description>
 <junction x="198.12" y="129.54"/>
 <wire x1="198.12" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
 <label x="185.42" y="129.54" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="127" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
 <junction x="205.74" y="129.54"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="BISENP"/>
